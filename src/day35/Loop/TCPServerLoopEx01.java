@@ -38,5 +38,4 @@ public class TCPServerLoopEx01 {
 			if( serverSocket != null ) try { serverSocket.close(); } catch( IOException e ) {}
 		}
 	}
-
 }
