@@ -11,7 +11,6 @@ import java.net.Socket;
 public class TCPServerEx01 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		ServerSocket serverSocket = null;
 		Socket socket = null;
