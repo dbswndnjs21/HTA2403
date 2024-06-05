@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.earlyword.tmp.MemberMapper">
+
+    <insert id="save" parameterType="com.earlyword.tmp.MemberJoinDTO">
+        insert into member1 (id, password) values (#{id}, #{password})
+    </insert>
+
+    <update id="update" parameterType="com.earlyword.tmp.MemberJoinDTO">
+        update member1 set password = #{password} where id = #{id}
+    </update>
+
+    <select id="findById" parameterType="String">
+         select * from member1 where id = #{id}
+    </select>
+
+</mapper>
